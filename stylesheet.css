@@ -1,0 +1,120 @@
+.calculator {
+    text-align:center;
+    margin:0px auto;
+    padding-top:30px;
+    width: 500px
+}
+
+.calculator-screen { 
+    width: 100%;
+    height: 100px;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    font-size: 36px;
+    border: solid 3px #444;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.calculator-keys {
+    width:100%;
+    background-color: #333333
+}
+
+.row{
+    display:flex;
+}
+
+button {
+    height:100px;
+    background-color: gray;
+    border: 3px solid black;
+    font-size: 32px;
+    color: #fff;
+    width: 25%;
+    outline: none;
+}
+
+.number:active {
+    background-color: #000;
+    border: none;
+}
+
+.all-clear, .zero-btn {
+    width: 50%;
+}
+
+.operator, .equal-sign {
+    background-color: orange;
+}
+
+button:hover {
+    background-color: darkgrey;
+}
+
+.operator:hover, .equal-sign:hover {
+    background-color: darkorange;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.label {
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-left: 685px;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    background-color: black;
+    transform: scale(1.5);
+}
+
+body {
+    background-color: white;
+    transition: background 0.3s linear;
+}
+
+body.dark {
+    background: black;
+}
+
+body.dark p {
+    color: #fff;
+}
+
+.checkbox {
+    opacity: 0;
+}
+
+.ball {
+    background-color: gray;
+    border-radius: 50px;
+    margin-left: -3px;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon-o {
+    color: orange;
+}
+
+.fa-sun-o {
+    color: yellow;
+}
